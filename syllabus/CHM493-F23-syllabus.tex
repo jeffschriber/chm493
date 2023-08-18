@@ -1,0 +1,407 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\pagenumbering{gobble}
+\usepackage{fontspec}
+\setmainfont{Source Sans Pro}
+\usepackage{float}
+\newcommand{\head}[1]{{{\Large\bf{#1}}}}
+\newcommand{\subhead}[1]{{\Large\bf{#1}}}
+\usepackage[table,xcdraw]{xcolor}
+% disable auto-indents
+\setlength\parindent{0pt}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\begin{document}
+
+ 
+%\vspace*{2cm}
+
+\begin{center}
+\includegraphics[width=2.5in]{iona_logo.pdf}
+\end{center}
+
+
+\begin{center}
+\head{CHM 493: A.I. in Chemistry} \\
+CHM 309, Department of Chemistry and Biochemistry \\
+~\\
+Fulfills department major/minor/elective requirements
+\end{center}
+
+\vspace*{1cm}
+
+%\noindent\subhead{Class Info:}
+
+\begin{tabular}{@{}ll}
+Semester/Year: & Fall 2023 \\
+Meeting Days and Times: & 9:00 AM-9:52 AM, Tuesday, Thursday, Friday *tentatively* \\
+Location: & Doorley Hall 226
+\end{tabular}
+~\\ \\
+
+\begin{tabular}{@{}ll}
+Instructor's Name: Dr. Jeffrey Schriber (he/him) and Dr. Rodney Versace& Office Location: Cornelia 104A/104C\\
+Email: jschriber@iona.edu, rversace@iona.edu & Phone (Iona): 914-633-2301 \\
+\multicolumn{2}{@{}l}{Office Hours: Monday/Wednesday 4:00 PM-5:00 PM}
+\end{tabular}
+
+~\\
+\textit{Office Hour Policy}: Office hours are an informal time where you are free to come by my
+office to ask questions, get help on homework, study, or just chat and say hello.
+If the above time does not work for you, 
+We are always happy to schedule another time by email. 
+You are also always welcome to stop by our offices to see if either of
+us are available. 
+
+~\\
+
+\subhead{Course Description from the University Catalogue}
+
+In recent years, artificial intelligence and machine learning have become increasingly prevalent
+tools for researchers in diverse areas of the chemical sciences. This course will provide an overview of the fundamentals
+of machine learning specific to its application to chemical problems. Special emphasis will be put on
+applications in drug discovery, materials discovery, and bioinformatics. The course will be centered
+on hands-on computational projects wherein we explore various chemical problems using our own developed models.
+
+~\\
+Co-requisites: CHM 309
+
+~\\
+\subhead{Course Student Learning Outcomes (SLOs)}
+
+\textit{Upon successful completion of this course, students are expected to...}
+
+\begin{table}[h!]
+\begin{tabular}{|l|l|l|l|}
+\hline
+\rowcolor[HTML]{C0C0C0}
+Course SLO Narrative & Supports Core SLO & Department & Method of Course \\
+\rowcolor[HTML]{C0C0C0}
+ & Narrative & SLO & SLO Assessment \\ \hline
+1. Develop an understanding of modern techniques &  &  & \\
+  in machine learning, and how they are used in  &  &  & \\ \hline 
+  chemistry contexts.  &  &  & \\ \hline 
+2.     &  &  & \\ \hline 
+    &  &  & \\ \hline 
+    &  &  & \\ \hline 
+\end{tabular}
+\end{table}
+
+~\\
+\subhead{Required Texts/Source Materials}
+
+There are no required texts for this course. All reading materials will be provided, taken
+in part from these sources (you can check them out if you like):
+\begin{itemize}
+\item Cartwright, Hugh M. \textit{Machine Learning in Chemistry: The Impact of Artificial Intelligence}. The Royal Society of Chemistry. 2020
+\item Engel, Thomas and Gasteiger, Johann. \textit{Chemoinformatics: Basic Concepts and Methods}. 1st edition. Wiley. 2018.
+\end{itemize}
+
+~\\
+\subhead{Planned Co-curricular Activities}
+
+All chemistry students are required to attend Careers in Science (CSI) events 
+throughout the semester. Please consult the \href{https://www.iona.edu/academics/schools-institutes/school-arts-science/chemistry-biochemistry-department/careers-science}{\textbf{CSI website}} for more details.
+
+%~\\
+%\subhead{Plan for Diversity Inclusion}
+
+
+\clearpage
+
+~\\ 
+\subhead{Grading Criteria and Assessment Information}
+
+The final grade will be approximately based on the following allocation:
+
+\begin{table}[h!]
+\begin{tabular}{ll}
+\textbf{Computational Projects} & 60 \% \\
+\textbf{Final Project}  & 30 \% \\
+\textbf{Final Presentation}     & 10 \% \\
+\end{tabular}
+\end{table}
+
+%~\\
+%\textbf{Participation.}
+%The participation grade is based on active participation in class activities and discussions,
+%in addition to regular attendance.
+%You will be regularly doing problems, working in groups, and presenting solutions to the class
+%during class times.
+%You are expected to 
+%participate in these activities, and the participation grade depends solely on effort and not
+%on correctness.
+%I will break the participation grade into four parts covering roughly four weeks each, 
+%corresponding to the time in between exams. 
+%I will post these grades on Blackboard alongside the exam that ends each four-week period.
+
+~\\
+\textbf{Computational Projects}
+
+Each course module will have one or more computational projects. These projects will typically
+be implemented in Jupyter Notebooks, and they will provide hands-on experience with
+applying machine learning to chemistry. These projects will have a lot of specialized
+instructions, and they will be completed both in class and as homework.
+
+~\\
+\textbf{Final Project}
+
+All modules and computational projects in the course build towards the final project.
+In the final project, you will conceptualize, develop, implement, and apply a machine
+learning model to any chemical problem of your choice. You will then write a formal 
+journal-style report detailing your findings. In addition to the article you will
+write up your own Jupyter Notebook to do all modeling and data analysis, also
+to be turned in. We will provide a list of potential projects for you, or you
+are welcome to choose any other project, with our approval. Lastly, we will provide
+a detailed rubric for the writing assignment.
+
+
+~\\
+\textbf{Final Presentation}
+
+During the final week of class, you will give an oral presentation of your project. 
+Presentations should be about 20 minutes, and you will be provided a detailed rubric
+in advance.
+
+
+~\\
+\textbf{Course Grades}
+
+\begin{table}[H]
+\begin{tabular}{|c|c|l|}
+\hline
+Letter  & Grade Point & Description \\ 
+Grade &  and Grade Scale &  \\ \hline
+A & 4.00 & \textit{Outstanding}. Signifies the highest level of achievement in the subject \\
+ &93-100 & and indicates an exceptional general competence, and exemplary \\
+ & & comprehension and interpretation skills. Work is devoid of errors, and \\
+ & & reflects a highly nuanced understanding of disciplinary concepts. \\ \hline
+A- & 3.67 & \textit{Excellent}. Signifies an advanced level of achievement approaching the \\ 
+ &90-92 & highest category. Work contains a few minor errors, but reflects a \\
+ & & mastery of disciplinary concepts. \\ \hline
+B+ & 3.33 & \textit{Very Good}. Signifies a consistently high level of achievement and \\
+ & 87-89 & indicates that the course requirements have been fulfilled in an \\
+ & & intelligent, superior manner. Work contains some minor errors, but \\
+ & & reflects a near mastery of disciplinary concepts. \\ \hline
+B & 3.00 & \textit{Good}. Signifies a complex engagement with disciplinary content, and \\
+   & 83-86 & well-developed critical skills. Work contains several minor, but no \\
+   & & significant errors. \\ \hline
+B- & 2.67 &  \textit{Above Average}. Signifies a more than acceptable degree of disciplinary \\
+ & 80-82& knowledge and skills. Work contains some significant and some minor \\
+ & & errors. \\ \hline
+C+ & 2.33 & Satisfactory. Signifies consistent achievement of a quality that satisfies, \\
+ & 77-79 & and sometimes exceeds stated, basic requirements. Work contains \\
+ & & significant errors and patterns of error, but reflects an acceptable \\
+ & & degree of disciplinary knowledge and skills. \\ \hline
+C & 2.00 & Fair. Signifies achievement of a quality that satisfies the stated, basic \\
+ & 73-76 & requirements of coursework, and a functional, though incomplete \\
+ & &  understanding of disciplinary concepts. \\ \hline
+C- & 1.67 & Poor. Signifies a level of understanding below the basic level expected \\
+ & 70-72 & of students. Work contains many errors, including patterns of error,\\
+&  &  and reflects only partial understanding of disciplinary concepts. \\ \hline
+D & 1.00 & Minimal Passing. Signifies a level of understanding well below the basic \\
+ & 60-69 & level expected of students. Work is consistently riddled with errors and \\
+ & & patterns of error, and reflects only a minimal understanding of \\ 
+ & & disciplinary concepts. \\ \hline
+P & & Passing. Signifies satisfactory completion of course requirements and \\
+& & the earning of credit without quality points. \\ \hline
+U & & Unsatisfactory. No quality points assigned. \\ \hline
+F & 0.00 & Failure. Signifies failure to meet basic course requirements. \\
+ & 0-59 & \\ \hline
+FA & & Failure - Excessive Absence. Signifies dismissal from a course for \\
+& & unacceptable academic performance and absence from 20 percent or \\
+& & more of the scheduled class sessions. Requests for this grade are filed \\
+& & by the faculty member with the dean of the school in which the student \\
+& & is enrolled. This grade is computed as an ``F'' in the cumulative index.  \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|c|c|l|}
+\hline
+Letter  & Grade Point & Description \\ 
+Grade &  and Grade Scale &  \\ \hline
+I & & If for serious reasons, students are unable to complete one or more \\ 
+  & & requirements of a including the final examination, students may apply \\
+  & & for an ``Incomplete gradex'' by filling out the ``Incomplete Request'' form\\
+  & & on Gaels 360. If the instructor grants the request, the instructor will\\
+  & & file an ``Incomplete grade student plan'' with the student and the dean's\\
+  & & office within 48 hours of an ``incomplete grade'' being submitted. The\\
+  & & student will have up to 3 weeks from the date that grades are due for\\
+  & & a semester to complete all outstanding work unless the instructor \\
+  & & specifies an earlier date. Please refer to the Academic Information page\\
+  & &  in the catalog for complete details. \\\hline 
+W & & Withdrawal. Signifies withdrawal from a course with permission of the \\
+& & Academic Advising Office or appropriate academic dean. \\ \hline
+H & & Audit. Signifies that a course was not taken for credit. \\ \hline
+SP & & Satisfactory Progress. Signifies that a course is not complete as of the \\
+& & end of the present semester, but is continuing. \\ \hline
+\end{tabular}
+\end{table}
+
+~\\
+\subhead{Course Outline}
+\begin{table}[H]
+\begin{tabular}{|c|c|l|}
+\hline
+\rowcolor[HTML]{C0C0C0}
+Week & Dates &  Topic \\ \hline
+   & 8/29  & Course Introduction/Python Basics \\ 
+1  & 8/31  & Python Basics \\ 
+   & 9/1   & Python/Stats Basics \\ \hline
+   & 9/5   & Machine Learning Packages in Python \\ 
+2  & 9/7   & Machine Learning Packages in Python \\ 
+   & 9/8   & Introduction to ML and Cheminformatics \\ \hline
+   & 9/12  & Molecular Representations\\ 
+3  & 9/14  & Molecular Representations/Descriptors\\ 
+   & 9/15  & Reaction Representations\\ \hline
+   & 9/19  & Databases in Chemistry \\ 
+4  & 9/21  & Databases in Chemistry \\ 
+   & 9/22  & Databases in Chemistry \\ \hline
+   & 9/26  & Supervised Learning Models: Introduction \\ 
+5  & 9/28  & Supervised Learning Models: Regression\\ 
+   & 9/29  & Supervised Learning Models: Classification\\ \hline
+   &10/3   & Supervised Learning Models: Model Assessment\\ 
+6  &10/5   & QSAR/QPSR\\ 
+   &10/6   & QSAR/QPSR\\ \hline
+   &10/10  & Neural Networks: Introduction\\ 
+7  &10/12  & Neural Networks: Graph and Feed-Forward NNs\\ 
+   &10/13  & Neural Networks: Convolutions\\ \hline
+   &10/17  & Neural Networks: Evaluation and Overfitting\\ 
+8  &10/19  & Neural Networks: Project/Case Study\\ 
+   &10/20  & Unsupervised Learning Models\\ \hline
+   &10/24  & Clustering and K-means\\ 
+9  &10/26  & Unsupervised Learning Project/Case Study\\ 
+   &10/27  & Data Collection: Introduction to Computational Chemistry\\ \hline
+   &10/31  & Data Collection: Molecular Dynamics and Biochemistry Modelling\\ 
+10 &11/2   & Data Collection: Molecular Dynamics and Biochemistry Modelling\\ 
+   &11/3   & Data Collection: ab initio Methods and DFT \\ \hline
+   &11/7   & Case Study: The ANI potential\\ 
+11 &11/9   & Case Study: The ANI potential\\ 
+   &11/10  & \textit{No Class}\\ \hline
+   &11/14  & Case Study: Alphafold II\\ 
+12 &11/16  & Case Study: Alphafold II\\ 
+   &11/17  & Bioinformatics \\ \hline
+   &11/21  & Project Work \\ 
+13 &11/23  & \textit{No Class}\\ 
+   &11/24  & \textit{No Class}\\ \hline
+   &11/28  & Bioinformatics\\ 
+14 &11/30  & Bioinformatics \\ 
+   &12/1   & Generative Models in Chemistry\\ \hline
+   &12/5   & Generative Models and Retrosynthesis\\ 
+15 &12/7   & Project Work \\ 
+   &12/8   & Project Presentations\\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+~\\
+\subhead{Instructor's Course Policies and Procedures}
+
+~\\
+\textbf{Attendance}
+
+You are expected to attend class, and you are responsible for material covered in class.
+If you anticipate an absence that is unavoidable, please notify me \textbf{before} the absence 
+so that I can make a plan to deliver any assignments or lecture slides from that day.
+You are responsible for getting class notes, however.
+
+~\\
+\textbf{Due Date Policy}
+
+This computational assignments involved in this course are challenging. They cannot in
+general be finished in a short amount of time, so please schedule ample time before the
+due dates to complete them. 
+Due dates for assignments are not flexible unless a valid circumstance requires an extension.
+\textbf{Such an arrangement must be made with me before the original due date.}
+~\\ \\
+Only work turned in by the due date will be considered for full credit. 
+Assignments turned in after the due date will be accepted up to a week after the date, 
+with a 20\% penalty. Assignments turned in over a week late will not be considered for credit.
+
+~\\
+\subhead{University Policy for all courses and students}
+
+\textbf{Cheating and Plagiarism}
+
+The unauthorized use or close imitation of the language and thoughts of another author/person and 
+the representation of them as one's own original work constitute acts of intellectual dishonesty. 
+In accordance with Iona University policies on cheating and plagiarism, 
+discovery of an act of cheating and/or plagiarism in this course will result in a failing grade for the assignment. 
+ Please be advised that the university policy does not allow a student who has committed an act of cheating, 
+ plagiarism or academic dishonesty to withdraw from the course. 
+ All acts of cheating, plagiarism, and/or academic dishonesty will be reported to the Dean of the School of Arts \& Science. 
+ After the first offense the student will be required to complete an instructional program on intellectual dishonesty. 
+ After the second offense, the student will no longer qualify for a degree with honors, 
+ and the student may be suspended from the university. 
+
+~\\
+\textbf{Attendance}
+
+All students are required to attend all classes. Iona has an attendance policy for which all students are accountable. 
+While class absence may be explained it is never excused. 
+Professors may weigh class absence in the class grade as they see fit. 
+Failure to attend class may result in a failure of the class for attendance (FA),
+ when the student has missed 20\% or more of the total class meetings. 
+ The FA grade weighs as an F would in the final official transcript.
+
+~\\
+\textbf{e-mail Communication}
+
+All students are required to use their assigned Iona email accounts for all University-related business
+ including electronic correspondence between students and faculty. 
+Students are advised to check their Iona email account on a regular basis.
+
+~\\
+\textbf{Appeal of Assigned Grade}
+
+Students who believe that an error has been made in the assignment of a grade should discuss with the 
+instructor the basis upon which the grade was determined.
+If, after this review of the grading criteria for the course and the student?s performance in it, 
+the student is not satisfied with the assigned grade, an appeal may be made to the department chair. 
+Such appeal must be made in writing, stating the basis upon which the grade is questioned 
+and requesting a departmental review.
+If, following the review, the student is not satisfied with the departmental decision; 
+final appeal may be made to the academic dean of the department involved. 
+FA excessive absence grades are awarded as a matter of policy and may not be appealed.
+
+~\\
+\textbf{Course and Teacher Evaluation (CTE)}
+
+Iona University now uses an on-line CTE system. 
+This system is administered by an outside company and all of the data is collected confidentially. 
+No student name or information will be linked to any feedback received by the instructor. 
+The information collected will be compiled in aggregate form by the agency and distributed back to the Iona 
+administration and faculty, with select information made available to students who complete the CTE. 
+Your feedback in this process is an essential part of improving course offerings and instructional effectiveness. 
+We want and value your point of view. 
+You will receive several emails at your Iona email account about how and 
+when the CTE will be administered with instructions on how to proceed.
+
+~\\
+\textbf{Iona University Accessibility Statement}
+
+If you are a student with a disability seeking reasonable accommodations in accordance with the 
+Americans with Disabilities Act (ADA), it is important that you contact the Accessibility Services Office (ASO) 
+at Access@Iona.edu for further information on how to apply for accommodations. 
+After receiving your application, an ASO staff will arrange a meeting to review your application and 
+discuss reasonable accommodations that are available at the post-secondary level. 
+These may include, extended time for exams in a separate location and use of assistive technology for note taking. 
+Once accommodations are approved, you will be required to forward your accommodation letter to each of your instructors.
+The ASO maintains the confidentiality of all students and will only disclose a student?s accommodations, 
+not their disability. Students may request accommodations at any time during the semester, 
+however the approved accommodations are not retroactive and students 
+must send their letters to their instructors each semester. 
+For additional information, please visit https://www.iona.edu/offices/accessibility-services/academic-accommodations.
+
+~\\
+\textbf{School Closings}
+Class cancellations due to inclement weather will be announced on the homepage of the Iona University website in addition to official social media accounts. Students who have registered for the University?s Campus Text Notification System will receive a text alert. Students may also call 914-633-2000. Your professor will provide further information about how cancelled class time due to weather will be made-up.
+
+
+\end{document}
+
